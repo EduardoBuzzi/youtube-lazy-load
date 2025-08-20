@@ -37,7 +37,7 @@ To embed a video, add a `<div>` element with the class `youtube-lazy-load` and a
 This will render a video thumbnail that, when clicked, loads the YouTube player.
 
 ```html
-<div class="youtube-lazy-load" data-video-id="56v174Lx-dQ"></div>
+<div class="youtube-lazy-load" data-video-id="M7lc1UVf-VE"></div>
 ```
 
 ## Options
@@ -47,9 +47,10 @@ You can control the player's behavior by adding `data-*` attributes to the `<div
 | Attribute | Type | Default | Description |
 | --- | --- | --- | --- |
 | `data-video-id` | String | (Required) | The unique ID of the YouTube video. |
-| `data-autoplay` | Boolean | `false` | If `true`, the video will play automatically when it becomes visible. Requires `data-muted="true"`. |
+| `data-autoplay` | Boolean | `false` | If `true`, the video will play automatically when it becomes visible. |
 | `data-loop` | Boolean | `false` | If `true`, the video will loop continuously. |
 | `data-muted` | Boolean | `false` | If `true`, the video will start without sound. This is required for autoplay to work in most browsers. |
+| `data-play-color` | String | (Optional) | Specify the color of the play button on hover. The format is any valid CSS color value, such as `#ff0000` or `rgb(255, 0, 0)`. |
 
 ### Example: Autoplay & Loop
 
@@ -58,10 +59,11 @@ This video will start playing automatically on mute as soon as it enters the vie
 ```html
 <div
   class="youtube-lazy-load"
-  data-video-id="56v174Lx-dQ"
+  data-video-id="M7lc1UVf-VE"
   data-autoplay="true"
   data-loop="true"
-  data-muted="true">
+  data-muted="true"
+  data-play-color="#ff0000">
 </div>
 ```
 
