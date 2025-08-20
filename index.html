@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YouTube Lazy Load - Demo</title>
+  </head>
+  <body>
+    <main id="app">
+      <header class="app-header">
+        <div style="text-align: center; margin: auto; width: 100%; display: block;">
+          <img draggable="false" width="64" height="64" src="/logo.svg" class="logo" alt="Logo" />
+        </div>
+        <h1>YouTube Lazy Load</h1>
+        <p class="read-info">
+          High-performance, dependency-free library to lazy-load YouTube videos.
+        </p>
+      </header>
+
+      <div class="card">
+        <fieldset>
+          <legend>Standard Video (Click to Play)</legend>
+          <p>The video player loads only after the user clicks the thumbnail.</p>
+          <div class="code-block">
+            <code>&lt;div class="youtube-lazy-load" data-video-id="M7lc1UVf-VE" data-play-color="#c460ff"&gt;&lt;/div&gt;</code>
+          </div>
+          <div class="youtube-lazy-load" data-video-id="M7lc1UVf-VE" data-play-color="#c460ff"></div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Autoplay Video</legend>
+          <p>The video starts playing automatically (muted) when it enters the viewport.</p>
+          <div class="code-block">
+            <code>&lt;div class="youtube-lazy-load" data-video-id="M7lc1UVf-VE" data-autoplay="true"&gt;&lt;/div&gt;</code>
+          </div>
+          <div class="youtube-lazy-load" data-video-id="M7lc1UVf-VE" data-autoplay="true"></div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Looping Video</legend>
+          <p>The video will restart automatically after it ends.</p>
+           <div class="code-block">
+            <code>&lt;div class="youtube-lazy-load" data-video-id="M7lc1UVf-VE" data-loop="true"&gt;&lt;/div&gt;</code>
+          </div>
+          <div class="youtube-lazy-load" data-video-id="M7lc1UVf-VE" data-play-color="#7dacff" data-loop="true"></div>
+        </fieldset>
+      </div>
+    </main>
+
+    <script type="module" src="/src/page/page.ts"></script>
+  </body>
+</html>

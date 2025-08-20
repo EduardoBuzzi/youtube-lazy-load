@@ -1,0 +1,104 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+
+  color-scheme: dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #1a1a1a;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  accent-color: #c460ff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  min-width: 320px;
+  min-height: 100vh;
+  padding: 2rem 1rem;
+}
+
+#app {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.app-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.logo {
+  height: 4em;
+  width: 4em;
+  will-change: filter;
+  transition: filter 300ms;
+  color: #c460ff;
+  filter: drop-shadow(0 0 1.5em #c460ffaa);
+}
+
+h1 {
+  font-size: 2.5em;
+  line-height: 1.1;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.read-info {
+  color: #888;
+  max-width: 45ch;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: #242424;
+  padding: 2em;
+  border-radius: 12px;
+  border: 1px solid #3a3a3a;
+}
+
+fieldset {
+  border: 1px solid #3a3a3a;
+  background: #202020;
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin: 0 0 2rem 0;
+}
+
+fieldset:last-of-type {
+  margin-bottom: 0;
+}
+
+legend {
+  padding: 0 0.5em;
+  font-size: 1.2em;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+fieldset p {
+  color: #aaa;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.code-block {
+  background: #1a1a1a;
+  border-radius: 8px;
+  padding: 1em;
+  margin-bottom: 1.5rem;
+  font-family: 'Courier New', monospace;
+  font-size: 0.9em;
+  border: 1px solid #3a3a3a;
+  overflow-x: auto;
+}
